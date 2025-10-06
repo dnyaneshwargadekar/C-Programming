@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    char ch = 'A';
+    int no = 11;
+    float f = 90.90f;
+    double d = 90.9999;
+
+    void *p = NULL;
+
+    p = &ch;
+    printf("%c\n",*(char *)p);
+
+    p = &no;
+    printf("%d\n",*(int *)p);
+
+    p = &f;
+    printf("%f\n",*(float *)p);
+
+    p = &d;
+    printf("%f\n",*(double *)p);
+
+    return 0;
+}
